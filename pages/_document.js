@@ -14,6 +14,12 @@ export default class MyDocument extends Document {
                         content={theme.palette.primary.main} />
                     <link rel="shortcut icon"
                         href="/static/favicon.ico" />
+                    <meta property="og:title" content="BlogChain" />
+                    <meta property="og:site_name" content="BlogChain" />
+                    <meta property="og:url" content="https://blogchain-rouge.vercel.app" />
+                    <meta property="og:description" content="The Blog website built on Solana by Jaymanyoo. Users can signup, post blogs, comment on posts by harnessing the decentalised power of blockchain." />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:image" content="https://ibb.co/kHMjjTT" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;700;800&display=swap" rel="stylesheet" />
