@@ -1,0 +1,67 @@
+ @import "../components/LoginBox/style.scss";
+ @import "../components/SignupBox/style.scss";
+ @import "../components/UserProfile/style.scss";
+ @import "../components/CommentCard/style.scss";
+ @import "../components/PostCard/style.scss";
+ @import "../components/Modal/style.scss";
+
+
+ .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 8px;
+    align-items: baseline;
+ }
+
+ .head-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: linear-gradient(215deg, #436df0, #f5e0ff);
+
+    .logo {
+       font-size: 22px;
+       font-weight: 600;
+       color: #d448f0;
+    }
+ }
+
+ .posts-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .data-container {
+    padding: 2px 16px;
+ }
+
+ .text-area {
+    width: 100%;
+    resize: none;
+    border: 1.5px solid #bb53ef;
+    border-radius: 4px;
+    padding-left: 8px;
+ }
+
+ .post-submit-btn {
+   width: 100%;
+    border: none;
+    padding: 8px 31px;
+    border-radius: 4px;
+    background: linear-gradient(215deg, #5379ef, #bb53ef);
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+       background: linear-gradient(15deg, #5379ef, #bb53ef);
+    }
+ }
+ .create-post-form-heading{
+   font-weight: 700;
+   text-align: center;
+   font-size: 20px;
+   color: #bb53ef;
+ }
+

@@ -1,0 +1,40 @@
+.comment-card {
+    margin: 8px 0px;
+    padding: 4px;
+    border: 1px solid #b057ef24;
+    border-left: 1px dashed #b555ef73;
+    border-right: 1px dashed #5976ef94;
+    .comment-content {
+        font-size: 16px;
+    }
+
+    .user-section {
+        .author {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            img {
+                height: 25px;
+                width: 25px;
+                object-fit: cover;
+                border-radius: 30px;
+                margin-right: 4px;
+            }
+
+            .user {
+                font-weight: 600;
+                color: #b456ef;
+                font-size: 14px;
+            }
+            .date-time{
+                font-weight: lighter;
+                font-size: 10px;
+                position: absolute;
+                right: 4px;
+                top: 0;
+            }
+        }
+
+    }
+}

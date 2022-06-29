@@ -1,0 +1,41 @@
+.login-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-box{
+        
+        padding: 20px 50px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px #9d9d9d;
+        .title{
+            font-size: 22px;
+            text-align: center;
+            color: #5379ef;
+            margin-bottom: 4px;
+        }
+        .sub-title{
+            font-size: 14px;
+            text-align: center;
+            color: #afaebb;
+            margin-bottom: 40px;
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+            .wallet-adapter-button{
+                background-color: #726dfe;
+                border: none;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                padding: 5px 8px;
+                padding-bottom: 2px;
+                border-radius: 4px;
+                img{
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}
