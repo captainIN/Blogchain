@@ -11,7 +11,7 @@ function SignupBox({signupUser}) {
     return (
         <div className='signup-container'>
             <form className='signup-box' onSubmit={e=>handleSubmit(e)}>
-                <div className='title'>Let's get Started</div>
+                <div className='title'>Let&apos;s get Started</div>
                 <div className='sub-title'>Set your profile.</div>
                 <input
                     type="text"
