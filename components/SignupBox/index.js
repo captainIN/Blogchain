@@ -1,17 +1,26 @@
 import React, { useState } from 'react'
+import useImageCompress from '../../hooks/useImageCompress';
 import useIPFS from '../../hooks/useIPFS';
 
 function SignupBox({ signupUser }) {
     const [username, setUsername] = useState("");
     const [profile_pic, setProfile_pic] = useState(null);
     const { ipfs, uploadFile } = useIPFS();
+    const { compress } = useImageCompress()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         if(!profile_pic) { return; }
+        
         let ipfs_result = await uploadFile(profile_pic);
         console.log("file upload results =>",ipfs_result);
         signupUser(username, "https://ipfs.infura.io/ipfs/"+ipfs_result.path);
+    }
+
+    const processImage = async (image) => {
+        let compressed_image = await compress(image);
+        console.log({compressed_image})
+        setProfile_pic(compressed_image)
     }
     return (
         <div className='signup-container'>
@@ -29,10 +38,7 @@ function SignupBox({ signupUser }) {
                 {ipfs ? (
                     <input
                         type="file"
-                        onChange={e => {
-                            setProfile_pic(e.target.files[0]);
-                            console.log(e.target.files[0])
-                        }}
+                        onChange={e => processImage(e.target.files[0])}
                         placeholder="Profile image link"
                         required
                     />
