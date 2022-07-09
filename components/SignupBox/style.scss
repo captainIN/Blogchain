@@ -24,7 +24,7 @@
             font-size: 14px;
             text-align: center;
             color: #afaebb;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         input {
@@ -47,6 +47,14 @@
             &:hover{
                 background: linear-gradient(15deg, #5379ef, #bb53ef);
             }
+        }
+
+        .signup-user-profile-pic{
+            height: 35px;
+            width: 35px;
+            border-radius: 35px;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
     }
 }
